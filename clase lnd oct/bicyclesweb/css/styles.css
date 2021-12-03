@@ -1,0 +1,34 @@
+p {
+    font-size: large;
+    font-weight: bolder;
+    color:blue;
+}
+
+#favourite-country {
+    color: red;
+}
+
+.greetings {
+    background-color: cadetblue;
+}
+
+/* #second-line{
+    color: red;
+}
+
+.first-lines {
+    background-color: green;
+    color: white;
+}
+
+#bicycle-image-left {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-top: 10px solid tomato;
+    padding-top: 20px;
+}
+
+#bicycle-image-right {
+    width: 40%;
+} */

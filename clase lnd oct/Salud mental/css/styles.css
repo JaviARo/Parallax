@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+
+.cabecera{
+    
+    position: absolute;
+    
+}
+
+#inicio{
+    
+    background-color: lightgreen;
+    background-image: url("img/cabecera");
+    position: relative;
+}
+
+nav{
+    position: relative;
+}

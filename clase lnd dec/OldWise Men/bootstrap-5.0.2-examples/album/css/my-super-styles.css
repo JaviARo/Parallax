@@ -1,0 +1,31 @@
+.my-super-animation {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+    25%  {
+        background-color: yellow;
+        top: 100px;
+        left: 0;
+    }
+    50%  {
+        background-color: blue;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        background-color: green;
+        top: 0;
+        left: 0;
+    }
+  }

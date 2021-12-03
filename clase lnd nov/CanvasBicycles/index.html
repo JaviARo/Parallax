@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+    <script src="js/components/do-click-sound.js"></script>
+    <script src="js/components/play_super_video.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <audio id="click-sound" src="m4a/click_sound.m4a" preload="auto"></audio>
+            <video id="horse" autoplay loop="true" src="video/horse.mp4"></video>
+        </a-assets>
+
+        <a-camera>
+            <a-cursor raycaster="objects: .clickable"></a-cursor>
+        </a-camera>
+        
+        <a-sphere material="color: green" position="2 1.6 -10" scale="1 1 1"
+        do-click-sound="src: #click-sound" do-click-sound></a-sphere>
+        
+        <a-plane material="src: #horse" position="-2 1.6 -5" scale="3 3 3" play-super-video
+        animation="property: rotation; to: 0 360 180; dir: alternate; loop: true; dur: 5000">
+
+        </a-plane> <!--a-video o a-plane-->
+    </a-scene>
+</body>
+</html>
